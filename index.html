@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="dist/photoswipe.css">
+  <link rel="stylesheet" href="dist/default-skin/default-skin.css">
+
+  <title>Ennebi design</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=-1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#678fa6">
+  <meta name="theme-color" content="#ffffff">-->
+
+  <!--script language="javascript" type="text/javascript" src="js/hovering.js"></script-->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="dist/photoswipe.js"></script>
+  <script src="dist/photoswipe-ui-default.js"></script>
+</head>
+
+
+<!-- INIZIO BODY -->
+
+<body>
+	<div id="header">
+		<a rel="logo" class="section_title" style="color: black; flex: 3 0 0;">ENNEBI DESIGN</a>
+
+		<a onclick="scrollToSection(home, 300, 'top')" style="cursor: pointer; color: black; flex: 1 0 0; margin-left: 20px; margin-right: 20px">Home</a>
+		<a onclick="scrollToSection(work, 300, 'top')" style="cursor: pointer; color: black; flex: 1 0 0; margin-left: 20px; margin-right: 20px">Work</a>
+		<a onclick="scrollToSection(about, 300, 'top')" style="cursor: pointer; color: black; flex: 1 0 0; margin-left: 20px; margin-right: 20px">About</a>
+		<a onclick="scrollToSection(contact, 300, 'top')" style="cursor: pointer; color: black; flex: 1 0 0; margin-left: 20px; margin-right: 20px">Contact</a>
+	</div>
+
+	<div class="carousel-container" onmouseover="makeAppearHoverText()" onmouseout="makeDisappearHoverText()">
+		<div class="carousel">
+			<div class="hoverText"><img style="height: 40px; width: auto" src="img/logo_1.png"><p class="hoverText__descript1">progettazione zaini</p><p class="hoverText__descript2">GO POP</p></div>
+		  <img id="1" onmouseover="updateHoverText(1)" class="carousel__item" src="img/main_1.jpg">
+		  <img id="2" onmouseover="updateHoverText(2)" class="carousel__item" src="img/main_2.jpg">
+		  <img id="3" onmouseover="updateHoverText(3)" class="carousel__item" src="img/main_3.jpg">
+
+		  <div id="controls" class="controls">
+		      <a href="#1" class="controls__dot">
+		        <span class="visuallyhidden">1</span>
+		      </a>
+		      <a href="#2" class="controls__dot">
+		        <span class="visuallyhidden">2</span>
+		      </a>
+		      <a href="#3" class="controls__dot">
+		        <span class="visuallyhidden">3</span>
+		      </a>
+		    </div>
+		</div>
+	</div>
+
+	<div id="afterMain">
+		<img style="height: 100px; width: auto; position: absolute; z-index: -1" src="img/logo_1.png">
+		<p>ennebi design:<br>visual & industrial design create together</p>
+	</div>
+
+	<div id="work">
+		<!--QUI C'È LA GALLERY 1-->
+        <div class="section section--head">
+            <div class="row">
+                <div class="demo-gallery" data-pswp-uid="1">
+                	<a href="img/work/work_1.jpg" class="demo-gallery__img--main" data-size="2835x2083" data-med="img/work/work_1.jpg" data-med-size="1024x1024"><img src="img/work/work_1.jpg" alt="Gallery image_1"><figure>Back to School.</figure></a>
+
+                	<a href="img/work/work_2.jpg" class="demo-gallery__img--main" data-size="1024x622" data-med="img/work/work_2.jpg" data-med-size="1024x1024"><img src="img/work/work_2.jpg" alt="Gallery image_2"><figure>Chicco borsetta.</figure></a>
+
+                	<a href="img/work/work_3.jpg" class="demo-gallery__img--main" data-size="4686x2415" data-med="img/work/work_3.jpg" data-med-size="1024x1024"><img src="img/work/work_3.jpg" alt="Gallery image_3"><figure>Go POP.</figure></a>
+
+                	<a href="img/work/work_4.jpg" class="demo-gallery__img--main" data-size="1251x1543" data-med="img/work/work_4.jpg" data-med-size="1024x1024"><img src="img/work/work_4.jpg" alt="Gallery image_4"><figure>Hello Kitty.</figure></a>
+
+                	<a href="img/work/work_5.png" class="demo-gallery__img--main" data-size="734x382" data-med="img/work/work_5.png" data-med-size="1024x1024"><img src="img/work/work_5.png" alt="Gallery image_5"><figure>Simba veicoli.</figure></a>
+
+                	<a href="img/work/work_6.jpg" class="demo-gallery__img--main" data-size="2001x1689" data-med="img/work/work_6.jpg" data-med-size="1024x1024"><img src="img/work/work_6.jpg" alt="Gallery image_6"><figure>Toys.</figure></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--NOW FOR THE GALLERY_2-->
+        <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+              <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+              </div>
+
+              <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip">
+                        <!-- <a href="#" class="pswp__share--facebook"></a>
+                        <a href="#" class="pswp__share--twitter"></a>
+                        <a href="#" class="pswp__share--pinterest"></a>
+                        <a href="#" download class="pswp__share--download"></a> -->
+                    </div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                  <div class="pswp__caption__center">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+	</div>
+
+	<div id="about">
+		<h2 class="section_title">ABOUT</h2>
+		<p>Barbara e Noemi di ennebi design "creano" insieme da oltre 15 anni. Tra le molteplici tipologie di articoli studiati, la loro vera passione è la progettazione di giocattoli (in particolare quelli dedicati alla prima infanzia) e l'ideazione di borse e zaini scuola e tempo libero per bambini e teen-agers. Dopo aver spaziato dallo studio di all-over per tessuti sino alla creazione di cataloghi, brochure, manifesti, negli ultimi 3 anni ennebi si dedica quasi totalmente alla progettazione di giocattoli ed allo studio di nuove linee scuola, il tutto dal progetto al prototipo, sino alla pre-produzione. Ricerca, ideazione e cura dei dettagli si fondono armoniosamente in ogni prodotto ennebi</p>
+	</div>
+
+	<div id="contact">
+		<h2 class="section_title">CONTACT</h2>
+		<p>Per qualsiasi informazione o richiesta, compila il modulo o contattaci ai seguenti riferimenti. Grazie</p>
+		<br><br>
+		<div class="contactBox">
+			<span style="flex: 1 0 0;">
+				<h5 style="margin-bottom:30px">ADDRESS</h5>
+				<p><b>ennebi design s.n.c.</b></p><br>
+				<p>vicolo dei Prati, 9/A<br>28021 Borgomanero (Novara)</p><br>
+				<p><a href="mailto:info@ennebidesign.it?subject=Feedback">info@ennebidesign.it</a><br>Tel: <a href="tel:+390322836185">+39 0322 836185</a></p>
+			</span>
+			<span style="flex: 2 0 0;">
+				<h5 style="margin-bottom:30px">GET IN TOUCH</h5>
+				<form class="cf">
+				  <div class="half left cf">
+				    <input style="width:100%; background: none; color: white" type="text" id="input-name" placeholder="Name">
+				  </div>
+				  <div class="half right cf">
+				    <input style="width:100%; background: none; color: white" type="text" id="input-name" placeholder="Email">
+				  </div>
+				  <div class="bottom cf">
+				    <textarea style="width: 100%; height: auto; background: none; border: none; color: white" name="message" type="text" id="input-message" placeholder="Il tuo messaggio…"></textarea>
+				  </div>
+				  <input type="submit" value="Submit" id="input-submit">
+				</form>
+			</span>
+		</div>
+	</div>
+
+	<div id="clients">
+		<h2 class="section_title">CLIENTS</h2>
+		<br>
+		<div class="logo_gallery">
+			<img src="img/clienti/client_1.png">
+			<img src="img/clienti/client_2.png">
+			<img src="img/clienti/client_3.png">
+			<img src="img/clienti/client_4.png">
+			<img src="img/clienti/client_5.png">
+			<img src="img/clienti/client_6.png">
+			<img src="img/clienti/client_7.jpg">
+			<img src="img/clienti/client_8.png">
+		</div>
+	</div>
+
+	
+
+	<!--SCRIPT-->
+	<script>
+		/*function scrollToContact() {
+		 	document.getElementById('contact').scrollIntoView();
+		}*/
+
+		function scrollToSection(e, time, where) {
+		    var eTop = e.getBoundingClientRect().top;
+		    var eAmt = eTop / 100;
+		    var curTime = 0;
+		    while (curTime <= time) {
+		        window.setTimeout(SVS_B, curTime, eAmt, where);
+		        curTime += time / 100;
+		    }
+		}
+
+		function SVS_B(eAmt, where) {
+		    if(where == "center" || where == "")
+		        window.scrollBy(0, eAmt / 2);
+		    if (where == "top")
+		        window.scrollBy(0, eAmt);
+		}
+
+		function makeAppearHoverText() {
+			document.getElementsByClassName('hoverText')[0].style.opacity = "0.8";
+		}
+
+		function makeDisappearHoverText() {
+			document.getElementsByClassName('hoverText')[0].style.opacity = "0";
+		}
+
+		function updateHoverText(i) {
+			if (i==1) {
+				document.getElementsByClassName('hoverText__descript1')[0].innerHTML = "progettazione zaini"
+				document.getElementsByClassName('hoverText__descript2')[0].innerHTML = "GO POP"
+			} if (i==2) {
+				document.getElementsByClassName('hoverText__descript1')[0].innerHTML = "giocattoli"
+				document.getElementsByClassName('hoverText__descript2')[0].innerHTML = "SIMBA VEICOLI"
+			} if (i==3) {
+				document.getElementsByClassName('hoverText__descript1')[0].innerHTML = "zaini famosi"
+				document.getElementsByClassName('hoverText__descript2')[0].innerHTML = "HELLO KITTY"
+			}
+		}
+	</script>
+
+	<!--PHOTOSWIPE SCRIPT-->
+	<script type="text/javascript">
+        (function() {
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = el.childNodes,
+                        numNodes = thumbElements.length,
+                        items = [],
+                        el,
+                        childElements,
+                        thumbnailEl,
+                        size,
+                        item;
+
+                    for(var i = 0; i < numNodes; i++) {
+                        el = thumbElements[i];
+
+                        // include only element nodes 
+                        if(el.nodeType !== 1) {
+                          continue;
+                        }
+
+                        childElements = el.children;
+
+                        size = el.getAttribute('data-size').split('x');
+
+                        // create slide object
+                        item = {
+                            src: el.getAttribute('href'),
+                            w: parseInt(size[0], 10),
+                            h: parseInt(size[1], 10),
+                            author: el.getAttribute('data-author')
+                        };
+
+                        item.el = el; // save link to element for getThumbBoundsFn
+
+                        if(childElements.length > 0) {
+                          item.msrc = childElements[0].getAttribute('src'); // thumbnail url
+                          if(childElements.length > 1) {
+                              item.title = childElements[1].innerHTML; // caption (contents of figure)
+                          }
+                        }
+
+
+                        var mediumSrc = el.getAttribute('data-med');
+                        if(mediumSrc) {
+                            size = el.getAttribute('data-med-size').split('x');
+                            // "medium-sized" image
+                            item.m = {
+                                src: mediumSrc,
+                                w: parseInt(size[0], 10),
+                                h: parseInt(size[1], 10)
+                            };
+                        }
+                        // original image
+                        item.o = {
+                            src: item.src,
+                            w: item.w,
+                            h: item.h
+                        };
+
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+                };
+
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+                    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return el.tagName === 'A';
+                    });
+
+                    if(!clickedListItem) {
+                        return;
+                    }
+
+                    var clickedGallery = clickedListItem.parentNode;
+
+                    var childNodes = clickedListItem.parentNode.childNodes,
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if(childNodes[i].nodeType !== 1) { 
+                            continue; 
+                        }
+
+                        if(childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+                    if(index >= 0) {
+                        openPhotoSwipe( index, clickedGallery );
+                    }
+                    return false;
+                };
+
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                    params = {};
+
+                    if(hash.length < 5) { // pid=1
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if(!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');  
+                        if(pair.length < 2) {
+                            continue;
+                        }           
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if(params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options->getThumbBoundsFn section of docs for more info
+                            var thumbnail = items[index].el.children[0],
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect(); 
+
+                            return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+                        },
+
+                        addCaptionHTMLFn: function(item, captionEl, isFake) {
+                            if(!item.title) {
+                                captionEl.children[0].innerText = '';
+                                return false;
+                            }
+                            captionEl.children[0].innerHTML = item.title /* +  '<br/><small>Photo: ' + item.author + '</small>' */;
+                            return true;
+                        },
+                        
+                    };
+
+
+                    if(fromURL) {
+                        if(options.galleryPIDs) {
+                            // parse real index when custom PIDs are used 
+                            // https://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for(var j = 0; j < items.length; j++) {
+                                if(items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if( isNaN(options.index) ) {
+                        return;
+                    }
+
+
+
+                    var radios = document.getElementsByName('gallery-style');
+                    /*for (var i = 0, length = radios.length; i < length; i++) {
+                        if (radios[i].checked) {
+                            if(radios[i].id == 'radio-all-controls') {
+
+                            } else if(radios[i].id == 'radio-minimal-black') {
+                                options.mainClass = 'pswp--minimal--dark';
+                                options.barsSize = {top:0,bottom:0};
+                                options.captionEl = false;
+                                options.fullscreenEl = false;
+                                options.shareEl = false;
+                                options.bgOpacity = 0.85;
+                                options.tapToClose = true;
+                                options.tapToToggleControls = false;
+                            }
+                            break;
+                        }
+                    }*/
+
+                    options.mainClass = 'pswp--minimal--dark';
+                    options.barsSize = {top:0,bottom:0};
+                    options.captionEl = true;
+                    options.fullscreenEl = true;
+                    options.shareEl = false;
+                    options.bgOpacity = 0.8; /* was 0.85 */
+                    options.tapToClose = true;
+                    options.tapToToggleControls = false;
+                 
+
+                    if(disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    // see: http://photoswipe.com/documentation/responsive-images.html
+                    var realViewportWidth,
+                        useLargeImages = false,
+                        firstResize = true,
+                        imageSrcWillChange;
+
+                    gallery.listen('beforeResize', function() {
+
+                        var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+                        dpiRatio = Math.min(dpiRatio, 2.5);
+                        realViewportWidth = gallery.viewportSize.x * dpiRatio;
+
+
+                        /*if(realViewportWidth >= 1200 || (!gallery.likelyTouchDevice && realViewportWidth > 800) || screen.width > 1200 ) {
+                            if(!useLargeImages) {
+                                useLargeImages = true;
+                                imageSrcWillChange = true;
+                            }
+                            
+                        } else {
+                            if(useLargeImages) {
+                                useLargeImages = false;
+                                imageSrcWillChange = true;
+                            }
+                        }*/
+                        useLargeImages = true; /*edited this ###*/ 
+
+                        if(imageSrcWillChange && !firstResize) {
+                            gallery.invalidateCurrItems();
+                        }
+
+                        if(firstResize) {
+                            firstResize = false;
+                        }
+
+                        imageSrcWillChange = false;
+
+                    });
+
+                    gallery.listen('gettingData', function(index, item) {
+                        if( useLargeImages ) {
+                            item.src = item.o.src;
+                            item.w = item.o.w;
+                            item.h = item.o.h;
+                        } else { /* ??? */
+                            item.src = item.m.src;
+                            item.w = item.m.w;
+                            item.h = item.m.h;
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // select all gallery elements
+                var galleryElements = document.querySelectorAll( gallerySelector );
+                for(var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i+1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if(hashData.pid && hashData.gid) {
+                    openPhotoSwipe( hashData.pid,  galleryElements[ hashData.gid - 1 ], true, true );
+                }
+            };
+
+            initPhotoSwipeFromDOM('.demo-gallery');
+
+        })();
+    </script>
+
+</html>
