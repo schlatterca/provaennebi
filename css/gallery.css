@@ -764,13 +764,3 @@ a.demo-gallery__img--main {
 #gplus {
   background: #d34836;
 }
-
-@media screen and (min-width: 1000px) {
-  .demo-gallery a {
-    margin: 0.5vw 0.5vw 0.5vw 0.5vw; /*was 0.5vw */
-  }
-  a.demo-gallery__img--main {
-    width: 11.12vw; /*4 each row = 22.5vw, 17.8 mobile ??? 18.4*/;
-    height: auto;
-  }
-}
